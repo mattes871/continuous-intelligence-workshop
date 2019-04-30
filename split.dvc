@@ -1,0 +1,19 @@
+cmd: python src/splitter.py
+deps:
+- md5: 45894911cc1a286547f6db4a51a9f2e4
+  path: data/raw/store47-2016.csv
+- md5: 59a4be513c2165242867265e7c5c454d
+  path: src/splitter.py
+md5: 749dd7b55557994a7aeec23535513608
+outs:
+- cache: true
+  md5: aba5029429335d2e19a4d60f3d866432
+  metric: false
+  path: data/splitter/train.csv
+  persist: false
+- cache: true
+  md5: e2fab660fb081adc6b8bb7777292bbc3
+  metric: false
+  path: data/splitter/validation.csv
+  persist: false
+wdir: .
